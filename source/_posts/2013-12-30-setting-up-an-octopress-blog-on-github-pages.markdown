@@ -65,8 +65,12 @@ $ rake set_root_dir[/blog]
 
 And then we have to change the url in the the _config.yml file, note that if you have a custom domain like for example jonvillage.com you have to put that there, if you don't want a custom domain and want to use your github url it would be just yourusername.github.io/blog
 
+Also we need to change the permalink to display your posts in the correct url
+
 ```
 url: http://yoururl/blog
+
+permalink: /:year/:month/:day/:title/
 ```
 
 The _config.yml file lets you configure the blog title, subtitle and more.
