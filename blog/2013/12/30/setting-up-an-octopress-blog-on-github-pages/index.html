@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Jon Village's Blog</title>
+  <title>Setting Up an Octopress Blog on Github Pages - Jon Village's Blog</title>
   <meta name="author" content="Jon Village">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jonvillage.com/blog">
+  <link rel="canonical" href="http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages">
   <link href="/blog/favicon.png" rel="icon">
   <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/blog/atom.xml" rel="alternate" title="Jon Village's Blog" type="application/atom+xml">
@@ -63,15 +63,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/">Setting Up an Octopress Blog on Github Pages</a></h1>
+      <h1 class="entry-title">Setting Up an Octopress Blog on Github Pages</h1>
     
     
       <p class="meta">
@@ -89,15 +86,15 @@
 
 <time datetime="2013-12-30T15:01:12-03:00" pubdate data-updated="true">Dec 30<span>th</span>, 2013</time>
         
-           | <a href="/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/#disqus_thread"
-             data-disqus-identifier="http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/">Comments</a>
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://jonvillage.com/blog">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>Suppose you are already hosting your personal site in github pages with your user name, so when you go to <a href="http://yourusername.github.io,">http://yourusername.github.io,</a> or <a href="http://yourcustomdomain.com">http://yourcustomdomain.com</a> if you had set up a custom domain, the page that gets renderer is your home page with your portfolio, social links and contact form.</p>
+<div class="entry-content"><p>Suppose you are already hosting your personal site in github pages with your user name, so when you go to <a href="http://yourusername.github.io,">http://yourusername.github.io,</a> or <a href="http://yourcustomdomain.com">http://yourcustomdomain.com</a> if you had set up a custom domain, the page that gets renderer is your home page with your portfolio, social links and contact form.</p>
 
 <p>However you want to have your own personal blog hosted in github pages too but this time pointing to <a href="http://yourcustomdomain/blog">http://yourcustomdomain/blog</a> so let&rsquo;s configure octopress in order to have that.</p>
 
@@ -185,18 +182,63 @@ After this we want to download all the gems that octopress uses, thankfully it c
 
 <p>I hope you liked it and could deploy it, if you have any further question just ask and I will answer as soon as I can</p>
 </div>
+
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Jon Village</span></span>
+
+      
+
+
+
+
+
+
+
+
   
 
 
-    </article>
+<time datetime="2013-12-30T15:01:12-03:00" pubdate data-updated="true">Dec 30<span>th</span>, 2013</time>
+      
+
+<span class="categories">
   
-  <div class="pagination">
+    <a class='category' href='/blog/blog/categories/blogging/'>Blogging</a>, <a class='category' href='/blog/blog/categories/github/'>Github</a>, <a class='category' href='/blog/blog/categories/octopress/'>Octopress</a>
+  
+</span>
+
+
+    </p>
     
-    <a href="/blog/blog/archives">Blog Archives</a>
-    
-  </div>
+      <div class="sharing">
+  
+  <a href="/blog//twitter.com/share" class="twitter-share-button" data-url="http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/" data-via="" data-counturl="http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/" >Tweet</a>
+  
+  
+  
 </div>
+
+    
+    <p class="meta">
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -217,6 +259,7 @@ After this we want to download all the gems that octopress uses, thankfully it c
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -231,7 +274,10 @@ After this we want to download all the gems that octopress uses, thankfully it c
       var disqus_shortname = 'jonvillage';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/';
+        var disqus_url = 'http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

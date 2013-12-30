@@ -4,13 +4,108 @@
   <title><![CDATA[Jon Village's Blog]]></title>
   <link href="http://jonvillage.com/blog/atom.xml" rel="self"/>
   <link href="http://jonvillage.com/blog/"/>
-  <updated>2013-12-30T14:58:50-03:00</updated>
+  <updated>2013-12-30T15:44:18-03:00</updated>
   <id>http://jonvillage.com/blog/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
-    
+    <name><![CDATA[Jon Village]]></name>
+    <email><![CDATA[contact@jonvillage.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Setting Up an Octopress Blog on Github Pages]]></title>
+    <link href="http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/"/>
+    <updated>2013-12-30T15:01:12-03:00</updated>
+    <id>http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages</id>
+    <content type="html"><![CDATA[<p>Suppose you are already hosting your personal site in github pages with your user name, so when you go to <a href="http://yourusername.github.io,">http://yourusername.github.io,</a> or <a href="http://yourcustomdomain.com">http://yourcustomdomain.com</a> if you had set up a custom domain, the page that gets renderer is your home page with your portfolio, social links and contact form.</p>
+
+<p>However you want to have your own personal blog hosted in github pages too but this time pointing to <a href="http://yourcustomdomain/blog">http://yourcustomdomain/blog</a> so let&rsquo;s configure octopress in order to have that.</p>
+
+<p>If you don&rsquo;t know about octopress, octopress is a blog framework that let&rsquo;s you create blog posts as a static page instead of a full dynamic page like wordpress, it is simpler because it doesn&rsquo;t need any database or special server, and you can host your blog on gh-pages as it is a static web page</p>
+
+<p>More info:
+<a href="http://octopress.org/">http://octopress.org/</a></p>
+
+<h2>Let&rsquo;s get our hands dirty</h2>
+
+<p>First let&rsquo;s clone octopress framework</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone git://github.com/imathis/octopress.git octopress</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now we want to point to our own github repository, so create your repository project repository on github and then</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git remote rm origin
+</span><span class='line'>$ git remote add origin your_repository</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Where it says your_repository it should be the project repository you just created.
+After this we want to download all the gems that octopress uses, thankfully it comes with bundler</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ bundle install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Then we have to tell octopress to create all the needed folders</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This is a good point to commit all our changes to our repository</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git add -A .
+</span><span class='line'>$ git commit -m "Initial setup"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now we need to configure octopress to use github pages</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake setup_github_pages  </span></code></pre></td></tr></table></div></figure>
+
+
+<p>Copy and paste your github repository on the promt when asked for it.</p>
+
+<p>We are almost there, so we have to configure octopress to be published on /blog in order to do that we have to change the root directory</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake set_root_dir[/blog]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And then we have to change the url in the the _config.yml file, note that if you have a custom domain like for example jonvillage.com you have to put that there, if you don&rsquo;t want a custom domain and want to use your github url it would be just yourusername.github.io/blog</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>url: http://yoururl/blog</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The _config.yml file lets you configure the blog title, subtitle and more.</p>
+
+<p>Now we need to generate all the pages and commit everything to your repository master</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ rake generate 
+</span><span class='line'>$ git add -A . 
+</span><span class='line'>$ git commit -m "Successfuly configured blog"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The finishing touch</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now go to <a href="http://yoururl/blog">http://yoururl/blog</a> and you can see it</p>
+
+<p>I hope you liked it and could deploy it, if you have any further question just ask and I will answer as soon as I can</p>
+]]></content>
+  </entry>
   
 </feed>

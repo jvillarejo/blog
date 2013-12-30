@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Github | Jon Village's Blog]]></title>
+  <link href="http://jonvillage.com/blog/blog/categories/github/atom.xml" rel="self"/>
+  <link href="http://jonvillage.com/blog/"/>
+  <updated>2013-12-30T15:44:18-03:00</updated>
+  <id>http://jonvillage.com/blog/</id>
+  <author>
+    <name><![CDATA[Jon Village]]></name>
+    <email><![CDATA[contact@jonvillage.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Setting Up an Octopress Blog on Github Pages]]></title>
+    <link href="http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/"/>
+    <updated>2013-12-30T15:01:12-03:00</updated>
+    <id>http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages</id>
+    <content type="html"><![CDATA[<p>Suppose you are already hosting your personal site in github pages with your user name, so when you go to <a href="http://yourusername.github.io,">http://yourusername.github.io,</a> or <a href="http://yourcustomdomain.com">http://yourcustomdomain.com</a> if you had set up a custom domain, the page that gets renderer is your home page with your portfolio, social links and contact form.</p>
+
+<p>However you want to have your own personal blog hosted in github pages too but this time pointing to <a href="http://yourcustomdomain/blog">http://yourcustomdomain/blog</a> so let&rsquo;s configure octopress in order to have that.</p>
+
+<p>If you don&rsquo;t know about octopress, octopress is a blog framework that let&rsquo;s you create blog posts as a static page instead of a full dynamic page like wordpress, it is simpler because it doesn&rsquo;t need any database or special server, and you can host your blog on gh-pages as it is a static web page</p>
+
+<p>More info:
+<a href="http://octopress.org/">http://octopress.org/</a></p>
+
+<h2>Let&rsquo;s get our hands dirty</h2>
+
+<p>First let&rsquo;s clone octopress framework</p>
+
+<p><code>
+$ git clone git://github.com/imathis/octopress.git octopress
+</code></p>
+
+<p>Now we want to point to our own github repository, so create your repository project repository on github and then</p>
+
+<p><code>
+$ git remote rm origin
+$ git remote add origin your_repository
+</code>
+Where it says your_repository it should be the project repository you just created.
+After this we want to download all the gems that octopress uses, thankfully it comes with bundler</p>
+
+<p><code>
+$ bundle install
+</code></p>
+
+<p>Then we have to tell octopress to create all the needed folders</p>
+
+<p><code>
+$ rake install
+</code></p>
+
+<p>This is a good point to commit all our changes to our repository</p>
+
+<p><code>
+$ git add -A .
+$ git commit -m "Initial setup"
+</code></p>
+
+<p>Now we need to configure octopress to use github pages</p>
+
+<p><code>
+$ rake setup_github_pages  
+</code></p>
+
+<p>Copy and paste your github repository on the promt when asked for it.</p>
+
+<p>We are almost there, so we have to configure octopress to be published on /blog in order to do that we have to change the root directory</p>
+
+<p><code>
+$ rake set_root_dir[/blog]
+</code></p>
+
+<p>And then we have to change the url in the the _config.yml file, note that if you have a custom domain like for example jonvillage.com you have to put that there, if you don&rsquo;t want a custom domain and want to use your github url it would be just yourusername.github.io/blog</p>
+
+<p><code>
+url: http://yoururl/blog
+</code></p>
+
+<p>The _config.yml file lets you configure the blog title, subtitle and more.</p>
+
+<p>Now we need to generate all the pages and commit everything to your repository master</p>
+
+<p><code>
+$ rake generate
+$ git add -A .
+$ git commit -m "Successfuly configured blog"
+</code></p>
+
+<p>The finishing touch</p>
+
+<p><code>
+rake deploy
+</code></p>
+
+<p>Now go to <a href="http://yoururl/blog">http://yoururl/blog</a> and you can see it</p>
+
+<p>I hope you liked it and could deploy it, if you have any further question just ask and I will answer as soon as I can</p>
+]]></content>
+  </entry>
+  
+</feed>
