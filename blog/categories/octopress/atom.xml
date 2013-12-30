@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Jon Village's Blog]]></title>
   <link href="http://jonvillage.com/blog/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://jonvillage.com/blog/"/>
-  <updated>2013-12-30T15:44:18-03:00</updated>
+  <updated>2013-12-30T15:55:28-03:00</updated>
   <id>http://jonvillage.com/blog/</id>
   <author>
     <name><![CDATA[Jon Village]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Setting Up an Octopress Blog on Github Pages]]></title>
-    <link href="http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/"/>
+    <link href="http://jonvillage.com/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/"/>
     <updated>2013-12-30T15:01:12-03:00</updated>
-    <id>http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages</id>
+    <id>http://jonvillage.com/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages</id>
     <content type="html"><![CDATA[<p>Suppose you are already hosting your personal site in github pages with your user name, so when you go to <a href="http://yourusername.github.io,">http://yourusername.github.io,</a> or <a href="http://yourcustomdomain.com">http://yourcustomdomain.com</a> if you had set up a custom domain, the page that gets renderer is your home page with your portfolio, social links and contact form.</p>
 
 <p>However you want to have your own personal blog hosted in github pages too but this time pointing to <a href="http://yourcustomdomain/blog">http://yourcustomdomain/blog</a> so let&rsquo;s configure octopress in order to have that.</p>
@@ -77,9 +77,13 @@ $ rake set_root_dir[/blog]
 
 <p>And then we have to change the url in the the _config.yml file, note that if you have a custom domain like for example jonvillage.com you have to put that there, if you don&rsquo;t want a custom domain and want to use your github url it would be just yourusername.github.io/blog</p>
 
-<p><code>
-url: http://yoururl/blog
-</code></p>
+<p>Also we need to change the permalink to display your posts in the correct url</p>
+
+<p>```
+url: <a href="http://yoururl/blog">http://yoururl/blog</a></p>
+
+<p>permalink: /:year/:month/:day/:title/
+```</p>
 
 <p>The _config.yml file lets you configure the blog title, subtitle and more.</p>
 

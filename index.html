@@ -71,7 +71,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/">Setting Up an Octopress Blog on Github Pages</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/">Setting Up an Octopress Blog on Github Pages</a></h1>
     
     
       <p class="meta">
@@ -89,8 +89,8 @@
 
 <time datetime="2013-12-30T15:01:12-03:00" pubdate data-updated="true">Dec 30<span>th</span>, 2013</time>
         
-           | <a href="/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/#disqus_thread"
-             data-disqus-identifier="http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/">Comments</a>
+           | <a href="/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/#disqus_thread"
+             data-disqus-identifier="http://jonvillage.com/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/">Comments</a>
         
       </p>
     
@@ -159,8 +159,14 @@ After this we want to download all the gems that octopress uses, thankfully it c
 
 <p>And then we have to change the url in the the _config.yml file, note that if you have a custom domain like for example jonvillage.com you have to put that there, if you don&rsquo;t want a custom domain and want to use your github url it would be just yourusername.github.io/blog</p>
 
+<p>Also we need to change the permalink to display your posts in the correct url</p>
+
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>url: http://yoururl/blog</span></code></pre></td></tr></table></div></figure>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>url: http://yoururl/blog
+</span><span class='line'>
+</span><span class='line'>permalink: /:year/:month/:day/:title/</span></code></pre></td></tr></table></div></figure>
 
 
 <p>The _config.yml file lets you configure the blog title, subtitle and more.</p>
@@ -204,7 +210,7 @@ After this we want to download all the gems that octopress uses, thankfully it c
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/">Setting Up an Octopress Blog on Github Pages</a>
+        <a href="/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/">Setting Up an Octopress Blog on Github Pages</a>
       </li>
     
   </ul>

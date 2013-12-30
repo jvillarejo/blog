@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages">
+  <link rel="canonical" href="http://jonvillage.com/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages">
   <link href="/blog/favicon.png" rel="icon">
   <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/blog/atom.xml" rel="alternate" title="Jon Village's Blog" type="application/atom+xml">
@@ -156,8 +156,14 @@ After this we want to download all the gems that octopress uses, thankfully it c
 
 <p>And then we have to change the url in the the _config.yml file, note that if you have a custom domain like for example jonvillage.com you have to put that there, if you don&rsquo;t want a custom domain and want to use your github url it would be just yourusername.github.io/blog</p>
 
+<p>Also we need to change the permalink to display your posts in the correct url</p>
+
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>url: http://yoururl/blog</span></code></pre></td></tr></table></div></figure>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>url: http://yoururl/blog
+</span><span class='line'>
+</span><span class='line'>permalink: /:year/:month/:day/:title/</span></code></pre></td></tr></table></div></figure>
 
 
 <p>The _config.yml file lets you configure the blog title, subtitle and more.</p>
@@ -217,7 +223,7 @@ After this we want to download all the gems that octopress uses, thankfully it c
     
       <div class="sharing">
   
-  <a href="/blog//twitter.com/share" class="twitter-share-button" data-url="http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/" data-via="" data-counturl="http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/" >Tweet</a>
+  <a href="/blog//twitter.com/share" class="twitter-share-button" data-url="http://jonvillage.com/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/" data-via="" data-counturl="http://jonvillage.com/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/" >Tweet</a>
   
   
   
@@ -246,7 +252,7 @@ After this we want to download all the gems that octopress uses, thankfully it c
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/">Setting Up an Octopress Blog on Github Pages</a>
+        <a href="/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/">Setting Up an Octopress Blog on Github Pages</a>
       </li>
     
   </ul>
@@ -275,8 +281,8 @@ After this we want to download all the gems that octopress uses, thankfully it c
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/';
-        var disqus_url = 'http://jonvillage.com/blog/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/';
+        var disqus_identifier = 'http://jonvillage.com/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/';
+        var disqus_url = 'http://jonvillage.com/blog/2013/12/30/setting-up-an-octopress-blog-on-github-pages/';
         var disqus_script = 'embed.js';
       
     (function () {
