@@ -5,7 +5,7 @@
 url: http://jonvillage.com/blog
 title: Jon Village's Blog
 subtitle: "A blog about software development, startups and life-hack ideas"
-author: Your Name
+author: Jon Village
 simple_search: http://google.com/search
 description:
 
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /blog/atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: contact@jonvillage.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -90,8 +90,8 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: jonvillage
+disqus_show_comment_count: true
 
 # Google Analytics
 google_analytics_tracking_id:
