@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Octopress | Jon Village's Blog]]></title>
+  <title><![CDATA[Category: Octopress | Juani Villarejo's Blog]]></title>
   <link href="http://jonvillage.com/blog/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://jonvillage.com/blog/"/>
-  <updated>2013-12-30T15:55:28-03:00</updated>
+  <updated>2014-05-26T19:23:37-03:00</updated>
   <id>http://jonvillage.com/blog/</id>
   <author>
-    <name><![CDATA[Jon Village]]></name>
+    <name><![CDATA[Juani Villarejo]]></name>
     <email><![CDATA[contact@jonvillage.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>

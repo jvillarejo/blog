@@ -1,17 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Jon Village's Blog]]></title>
+  <title><![CDATA[Juani Villarejo's Blog]]></title>
   <link href="http://jonvillage.com/blog/atom.xml" rel="self"/>
   <link href="http://jonvillage.com/blog/"/>
-  <updated>2013-12-30T15:55:28-03:00</updated>
+  <updated>2014-05-26T19:23:37-03:00</updated>
   <id>http://jonvillage.com/blog/</id>
   <author>
-    <name><![CDATA[Jon Village]]></name>
+    <name><![CDATA[Juani Villarejo]]></name>
     <email><![CDATA[contact@jonvillage.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Solo Se Que No Se Nada]]></title>
+    <link href="http://jonvillage.com/blog/2014/05/23/solo-se-que-no-se-nada/"/>
+    <updated>2014-05-23T17:21:12-03:00</updated>
+    <id>http://jonvillage.com/blog/2014/05/23/solo-se-que-no-se-nada</id>
+    <content type="html"><![CDATA[<p>Frase conocida, repetida durante años, podría decirse una de las citas más antiguas en la historia de la humanidad. Sin embargo entendí su significado hace tan poco tiempo, anoche.</p>
+
+<p>Luego de ver una charla de Bret Victor en YouTube titulada <a href="https://www.youtube.com/watch?v=8pTEmbeENF4">The future of programming</a> la conclusión, &lsquo;The most dangerous thought you can have as a creative person is to think you know what you&rsquo;re doing&rsquo;, me llevó a pensar uno de los grandes errores en el aprendizaje, el creer que sabés.</p>
+
+<p>Si estás convencido de que sabés algo, dejás de crecer, cerras la visión a otras alternativas, y por lo tanto terminó tu aprendizaje. En cambio si nos mantenemos en constante búsqueda, si no nos quedamos conformes con nuestro conocimiento, dejamos lugar para seguir mejorando, para encontrar nuevas soluciones y respuestas a nuestros problemas.</p>
+
+<p>Estos postulados también me hicieron recordar a un gran libro que lei hace un tiempo &ldquo;Las enseñanzas de Don Juan&rdquo; de Carlos Castaneda. Don Juan un sabio chamán le cuenta al narrador sobre como ser un hombre de conocimiento, y nombra a 4 enemigos que un hombre tiene que derrotar para lograr ser un hombre de conocimiento.</p>
+
+<ul>
+<li><p>El miedo</p></li>
+<li><p>La claridad</p></li>
+<li><p>El poder</p></li>
+<li><p>La vejéz</p></li>
+</ul>
+
+
+<p>Todo esto es más fácil decirlo que hacerlo, me incluyo en esto último también, particularmente creo que la lectura manteniendo la mente abierta es escencial, sin embargo no quiero decir que debamos perder la visión crítica, si no que considero que ante la aparición de una práctica nueva o un conocimiento nuevo, deberíamos evaluarlo con una visión científica.</p>
+
+<p>Experimentar es el pilar del método científico dando lugar posterior a una evaluación de los resultados obtenidos. Los cuales nos dirán si debemos adoptar esta nueva práctica si efectivamente percibimos una mejora en los resultados.</p>
+
+<p>Como conclusión creo fervientemente que el ser humano debe estar en constante búsqueda y crecimiento y que el ser humano muere en el instante en que deja de aprender</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Aprender a Programar en Las Escuelas?]]></title>
+    <link href="http://jonvillage.com/blog/2014/02/19/aprender-a-programar-en-las-escuelas/"/>
+    <updated>2014-02-19T17:42:05-03:00</updated>
+    <id>http://jonvillage.com/blog/2014/02/19/aprender-a-programar-en-las-escuelas</id>
+    <content type="html"><![CDATA[<p>Hace tiempo que vengo pensando y repensando sobre esto, tiene lugar la programación en el aula de una escuela. Este post será se enfocará en hacer una reseña de porqué para mi no solo tiene lugar si no que es un deber de los maestros enseñarles a sus alumnos sobre programación y sobre la repercusión que esto haría sobre la educación en general.</p>
+
+<h1>Programar es un arte</h1>
+
+<p>Muchos viene con un preconcepto, probablemente porque las carreras de hoy en día lo involucran, de que para programar es necesario ser experto en matemática, y pasar por cursos donde se aprende a derivar a integrar. En mi experiencia practicamente en ningún proyecto que me involucré tuve que hacer cuentas que escaparan de una simple multiplicación o sumatoria, conceptos aprendidos en primero y segundo grado del primario.</p>
+
+<p>Como bien dice el título programar en mi opinión tiene su gran cuota de arte, pensar, idear y crear entes que se relacionen unos con otros, ir armando piezas pequeñas que cumplan un objetivo y unirlas para que jueguen entre ellas más cercano a cuando jugaba en mi infancia con los Lego.</p>
+
+<h1>Programar facilita el aprendizaje</h1>
+
+<p>Hubo muchas veces en las que me tuve que enfrentar con algun problema de programción que me costaba resolver, frustrado porque tenía que terminarse y no salía, era un golpe bajo a la confianza. Cuando me encuentro en esta situación primero hay que tomar un descanzo y retomar en un rato, la mente se refrezca, vuelve con otros ánimos a encarar el problema en cuestión.</p>
+
+<p>El problema en general sucede cuando tratamos de encarar algo de una gran magnitud tratando de pensar en todo junto al mismo tiempo, la solución es simplemente dividir el gran problema en pequeños problemas a resolver, lo bueno es que esto se puede hacer tantas veces como sea necesario y lo mejor es que esta es una habilidad no solo que crece con la práctica si no que nos abre la puerta para aprender cualquier cosa, desde diseño gráfico, un instrumento musical, economía, etc.</p>
+
+<h1>Programar estimula la curiosidad</h1>
+
+<p>Hoy en día vivimos constantemente con internet, es más llegó un punto en que no recordamos como era nuestra vida sin estar conectados. Todo eso que vemos a través del browser alguien detrás lo programó, hay cosas que nos llaman más la atención que otras obviamente pero en escencia al que programa le llama la atención saber como alguien resolvió determinado problema, como creo esa web como hizo esa aplicación para el celular.</p>
+
+<p>Esto nos lleva a insaciablemente buscar en la web entre todo el código publicado para entender, para aprender, para crecer.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Setting Up an Octopress Blog on Github Pages]]></title>
